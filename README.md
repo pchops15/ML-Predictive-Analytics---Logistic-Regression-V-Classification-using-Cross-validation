@@ -36,37 +36,26 @@ Model Evaluation Metrics
 
 **Results**
 
-Logistic Regression outperformed the classification tree numerically, achieving:
-
-LogLoss: ~0.339
-
-Accuracy: ~87.4%
-
-The Classification Tree achieved a LogLoss of ~0.376, but offered greater interpretability for non-technical users.
-
-The logistic model’s coefficients confirmed expected financial behavior:
-
-Higher FICO scores reduce the odds of default.
-
-Higher debt-to-income ratios (DTI) increase default risk.
-
-The interest rate coefficient showed strong inverse association, likely reflecting internal risk-based pricing.
+- Logistic Regression outperformed the classification tree numerically, achieving:
+  - LogLoss: ~0.339
+  - Accuracy: ~87.4%
+- The Classification Tree achieved a LogLoss of ~0.376, but offered greater interpretability for non-technical users.
+- The logistic model’s coefficients confirmed expected financial behavior:
+  - Higher FICO scores reduce the odds of default.
+  - Higher debt-to-income ratios (DTI) increase default risk.
+  - The interest rate coefficient showed strong inverse association, likely reflecting internal risk-based pricing.
 
 **Key Insights**
 
-Model Recommendation: Logistic regression was proposed as the ideal prediction tool, as it delivers more reliable probability estimates while maintaining transparency for business decision-making.
-
-Interpretation Challenge: The classification tree failed to visualize rule-based paths due to class imbalance — predicting all loans as “Repaid.” This underscores the need for class balancing in future iterations.
-
-Risk Perspective: The model enables Figel’s team to adjust investment strategies by setting probability thresholds according to their risk tolerance (e.g., risk-averse teams prioritize minimizing false negatives).
+- Model Recommendation: Logistic regression was proposed as the ideal prediction tool, as it delivers more reliable probability estimates while maintaining transparency for business decision-making.
+- Interpretation Challenge: The classification tree failed to visualize rule-based paths due to class imbalance — predicting all loans as “Repaid.” This underscores the need for class balancing in future iterations.
+- Risk Perspective: The model enables Figel’s team to adjust investment strategies by setting probability thresholds according to their risk tolerance (e.g., risk-averse teams prioritize minimizing false negatives).
 
 **Tools & Libraries**
 
-Language: R
-
-Key Packages: tidyverse, rpart, rpart.plot, MLmetrics, caret
-
-Techniques: Data cleaning, feature engineering, classification modeling, cross-validation, performance evaluation.
+- Language: R
+- Key Packages: tidyverse, rpart, rpart.plot, MLmetrics, caret
+- Techniques: Data cleaning, feature engineering, classification modeling, cross-validation, performance evaluation.
 
 📈 Business Impact
 
