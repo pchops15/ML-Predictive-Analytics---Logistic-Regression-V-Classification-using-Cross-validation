@@ -13,33 +13,26 @@ The analysis follows a structured workflow:
 
 Data Cleaning & Preparation
 
-Filtered loan records to include only finalized outcomes: Fully Paid, Charged Off, and Default.
-
-Engineered key features such as fico (average of FICO range), income (handling joint vs. individual applications), and combined_dti.
-
-Removed incomplete observations and encoded categorical variables as factors.
+- Filtered loan records to include only finalized outcomes: Fully Paid, Charged Off, and Default.
+- Engineered key features such as fico (average of FICO range), income (handling joint vs. individual applications), and combined_dti.
+- Removed incomplete observations and encoded categorical variables as factors.
 
 Feature Selection
 
-Chosen predictors include borrower characteristics and loan attributes such as int_rate, loan_amnt, dti, fico, verification_status, purpose, and sub_grade.
+- Chosen predictors include borrower characteristics and loan attributes such as int_rate, loan_amnt, dti, fico, verification_status, purpose, and sub_grade.
 
 Model Development
 
-Implemented and compared two supervised learning models in R:
-
-Classification Tree (CART) using rpart
-
-Logistic Regression using glm
-
-Evaluated both models with 4-fold cross-validation to estimate out-of-sample performance.
+- Implemented and compared two supervised learning models in R:
+  - Classification Tree (CART) using rpart  
+  - Logistic Regression using glm
+- Evaluated both models with 4-fold cross-validation to estimate out-of-sample performance.
 
 Model Evaluation Metrics
 
-LogLoss – to measure probability calibration.
-
-Accuracy and Confusion Matrix – to assess classification performance on the 20% holdout set.
-
-Interpretability – qualitative evaluation based on clarity of decision rules and business usability.
+- LogLoss – to measure probability calibration.
+- Accuracy and Confusion Matrix – to assess classification performance on the 20% holdout set.
+- Interpretability – qualitative evaluation based on clarity of decision rules and business usability.
 
 **Results**
 
